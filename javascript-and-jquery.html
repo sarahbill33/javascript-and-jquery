@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="javascript-and-jquery.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="javascript-and-jquery.js"></script>
+</head>
+<body>
+<button id="clear" type="button" onclick="myFunction()">Clear and Create New Grid</button>
+<script>
+function myFunction() {
+    $(".child").css("background-color","white");
+    $("#master").empty();
+    var gridDim = prompt("Please enter a number value for the grid dimensions");
+    var divCount = 0
+    while (divCount < (gridDim * gridDim)) {
+	$("#master").append("<div class='child'></div>");
+	divCount = divCount +1;
+    };
+    $("#master").css("height",gridDim * 27);
+    $("#master").css("width",gridDim * 27);
+    $(".child").hover(function() {
+	$(this).css("background-color","purple");
+    });
+};
+</script>
+<div id="master">
+</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.child {
+	border-style:solid;
+	border-color:gray;
+	border-width: 1px;
+	padding: 0px;
+	margin: 0px;
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	vertical-align: top;
+}
+
+#master {
+	height: 432px;
+	width: 432px;
+	margin-top: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
